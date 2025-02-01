@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Choose Background Color</h1>
+    <h3>click the start button to view different colors of the web page</h3>
+    <h3>click the stop button to pause the background color</h3>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <script>
+        const start = document.getElementById("start");
+        const stop = document.getElementById("stop");
+        const body = document.querySelector("body");
+        function colorGenerator(){
+            let num1 = Math.floor(Math.random()*256);
+            let num2 = Math.floor(Math.random()*256);
+            let num3 = Math.floor(Math.random()*256);
+            let num4 = Math.random().toFixed(3);
+            let color = `rgba(${num1}, ${num2}, ${num3}, ${num4})`;
+            return color;
+        }
+        start.addEventListener("click", ()=>{
+            colorchanger = setInterval(()=>{
+                let color = colorGenerator();
+                body.style.backgroundColor = color;
+            },1000)
+        })
+        stop.addEventListener("click", ()=>{
+            clearInterval(colorchanger);
+        })
+    </script>
+</body>
+</html>

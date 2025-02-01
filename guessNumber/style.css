@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-size: x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    padding: 2%;
+    background-color: cornflowerblue;
+}
+#convas{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#num{
+    height: 2.5rem;
+    width: 6rem;
+    border-radius: 0.3rem;
+    color: black;
+    text-align: center;
+}
+#button{
+    padding: 1%;
+    border-radius: 0.3rem;
+    color: rgb(231, 51, 51);
+    border: 2px solid black;
+    font-size: large;
+    font-weight: bold;
+}
+#heading{
+    font-size: 2rem;
+}
+#head{
+    font-size: xx-large;
+    background-color: rgb(44, 68, 112);
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+}
